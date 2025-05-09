@@ -40,12 +40,12 @@ with st.sidebar:
 
 with st.sidebar:
     st.subheader("Github Repository")
-    st.code("https://github.com/pariya-tavangar")
+    st.code("https://github.com/pariya-tavangar/My-APOD")
 
 match selected:
     case "Home":
         st.title("Hello There!!")
-        st.write(" (definitely a starwars reference)")
+        st.caption(" (definitely a starwars reference)")
 
         st.write("This mini tiny project shows how to use NASA APOD API and provide easy fast output using streamlit.")
         st.write("---")
@@ -89,13 +89,23 @@ match selected:
                 Titles = data.get("title", "N/A")
                 Explanation = data.get("explanation", "N/A")
                 myIMg = data.get("url", "N/A")
+                highres = data.get("hdurl", "N/A") 
+                copyrights = data.get("copyright", "N/A")    
+
                 st.title(Titles)
                 st.write("📅",current_date)
                 st.write(Explanation)
+                
 
                 
                 if myIMg.endswith('.jpg') or myIMg.endswith('.jpeg') or myIMg.endswith('.png'):
                     st.image(myIMg)
+                    st.badge("High Resolution Image")
+                    st.write("🔗", highres)
+
+                    if copyrights != "N/A":
+                        st.badge("Copyrights")
+                        st.write(copyrights)
                 else:
                     st.video(myIMg)
 
@@ -103,10 +113,11 @@ match selected:
 
             elif response.status_code == 403:
                 st.error("No api_key found 🔑")
-                st.write(response)
+                st.toast(response)
+            
             else:
                 st.error("You entered the following date 🕤")
-                st.write(response)
+                st.toast(response)
 
         except requests.exceptions.ConnectionError:
             st.error("No Internet Connection ❌")
