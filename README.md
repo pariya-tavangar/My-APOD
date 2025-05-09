@@ -1,6 +1,6 @@
 # My APOD | Astronomy Picture of the Day
 
-![banner.png](models/banner.png)
+![.thumbnail/banner.png](models/banner.png)
 
 ## what is this about? 
 This mini tiny project shows how to use NASA APOD API and provide easy fast output using streamlit.
