@@ -7,13 +7,13 @@ This mini tiny project shows how to use NASA APOD API and provide easy fast outp
 <br><br>
 ## How To Use? ⚙
 
-First, install required imported libraries
-To test it out, sign in https://api.nasa.gov/ and get your API key for free
-Replace the API_KEY with yours in secrects.toml and run it with the command below
+First, install required imported libraries.
+To test it out, sign in https://api.nasa.gov/ and get your API key for free.
+Replace the API_KEY with yours in secrects.toml and run it with the command below.
 ```
 streamlit run <file.py>
 ```
-For customization, You can either use default streamlit panel settings or use config.toml placed inside .streamlit directory
+For customization, You can either use default streamlit panel settings or use config.toml placed inside .streamlit directory.
 <br><br>
 
 ## Developer Todo 📝
@@ -23,8 +23,7 @@ For customization, You can either use default streamlit panel settings or use co
 <br><br>
 
 ## Documentation 📚
-For more information 
-[Wiki Link](https://github.com/pariya-tavangar/Cisco-Packet-Tracer-IOT-Examples/wiki)
+For more information, checkout https://apod.nasa.gov/apod/archivepix.html to access the official archive.
 
 
 ## Countribute 🤝
