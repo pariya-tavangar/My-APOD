@@ -29,7 +29,6 @@ st.markdown(
 API_KEY = st.secrets["api_key"]["my_api"]
 
 
-
 with st.sidebar:
     selected = option_menu(
         menu_title="Menu",
