@@ -105,7 +105,7 @@ match selected:
 
                     if copyrights != "N/A":
                         st.badge("Copyrights")
-                        st.write(copyrights)
+                        st.write("📷", copyrights)
                 else:
                     st.video(myIMg)
 
