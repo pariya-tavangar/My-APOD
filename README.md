@@ -26,9 +26,10 @@
 
 ### Quick Start
 1. Clone the repository:
-   `bash
+   ```
    git clone https://github.com/yourusername/nasa-apod-streamlit.git
-   cd nasa-apod-streamlit
+   streamlit run main.py
+   ```
 
 <br>
 
